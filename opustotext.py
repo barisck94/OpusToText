@@ -1,10 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan  3 00:13:38 2023
-
-@author: PC
-"""
 import os
+import speech_recognition as sr
 opus_path = input("opus dosyasinin ismi: ")
 try:
     f = open(opus_path+".txt", "x")
@@ -14,7 +9,6 @@ except:
 wav_path = opus_path+".wav"
 opus_path = opus_path+".opus"
 os.system(f'ffmpeg -i "{opus_path}" -vn "convertttttttttttttttttttttttttttttttttttttting.wav"')
-import speech_recognition as sr
 r = sr.Recognizer()
 with sr.AudioFile("convertttttttttttttttttttttttttttttttttttttting.wav") as source:
     audio = r.record(source)
