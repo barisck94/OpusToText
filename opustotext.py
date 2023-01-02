@@ -1,6 +1,6 @@
 import os
 import speech_recognition as sr
-opus_path = input("opus dosyasinin ismi: ")
+opus_path = input("name of the file: ")
 try:
     f = open(opus_path+".txt", "x")
 except:
